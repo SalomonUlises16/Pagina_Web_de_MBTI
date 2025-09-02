@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test MBTI - Realizar Test</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <div class="contenedor cabezal-contenido">
+                <div class="logo">MBTI Insights</div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="index.html#acerca">Acerca de MBTI</a>
+                        </li>
+                        <li>
+                            <a href="test.html">Realizar Test</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="test" class="seccion">
+                <div class="contenedor">
+                    <h2 class="seccion-titulo">Test de Personalidad MBTI</h2>
+                    <div id="cuestionario">
+                        <div class="contenedor-progreso">
+                            <p>Progreso: <span id="texto-progreso">0%</span></p>
+                            <div class="barra-progreso-fondo">
+                                <div class="progreso" id="barra-progreso"></div>
+                            </div>
+                        </div>
+                        <div class="pregunta">
+                            <p class="texto-pregunta" id="texto-pregunta">La pregunta aparecerá aquí.</p>
+                            <div class="escala-likert" id="escala-likert">
+                        </div>
+                        </div>
+                        <div class="botones-navegacion">
+                            <button class="boton" id="btn-anterior" disabled>Anterior</button>
+                            <button class="boton" id="btn-siguiente">Siguiente</button>
+                        </div>
+                    </div>
+                    <div class="info-test" id="instrucciones-test">
+                        <h3>Instrucciones para el test</h3>
+                        <p>El test consta de 120 preguntas organizadas en 8 secciones correspondientes a las funciones cognitivas. Para cada afirmación, indica tu nivel de acuerdo usando la escala de 5 puntos:</p>
+                        <ol>
+                            <li>Muy en desacuerdo</li>
+                            <li>En desacuerdo</li>
+                            <li>Neutral</li>
+                            <li>De acuerdo</li>
+                            <li>Muy de acuerdo</li>
+                        </ol>
+                        <p>Responde con honestidad, no hay respuestas correctas o incorrectas.</p>
+                        <button class="boton" id="comenzar-test">Comenzar Test</button>
+                    </div>
+                </div>
+            </section>
+            <section id="resultados" class="seccion">
+                <div class="contenedor">
+                    <h2 class="seccion-titulo">Tu Resultado</h2>
+                    <div id="seccion-resultados">
+                        <div class="tarjeta-resultado">
+                            <h3>Tu tipo de personalidad es:</h3>
+                            <div class="tipo-mbti" id="resultado-mbti">Indefinido</div>
+                            <p id="descripcion-tipo">La descripción del tipo aparecerá aquí.</p>
+                        </div>
+                        <div class="grafico-funciones">
+                            <h3>Perfil de Funciones Cognitivas</h3>
+                            <canvas id="grafico-funciones-canvas" width="400" height="300"></canvas>
+                        </div>
+                        <div class="opciones-compartir">
+                            <button class="boton" id="compartir">Compartir</button>
+                            <button class="boton" id="repetir-test">Repetir Test</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="contenedor">
+                <p>MBTI. Todos los derechos reservados.</p>
+                <p>Este test está basado en la teoría de tipos psicológicos de Carl Jung y el Indicador de Tipo Myers-Briggs.</p>
+            </div>
+        </footer>
+        <script src="script-test.js"></script>
+    </body>
+</html>
